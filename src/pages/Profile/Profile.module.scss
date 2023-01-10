@@ -1,0 +1,118 @@
+.avatar{
+  img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(235, 235, 235);
+    border-radius: 6px;
+  }
+}
+
+.avatarSkelet{
+  display: flex;
+  gap: 20px;
+  img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(235, 235, 235);
+    border-radius: 6px;
+  }
+}
+
+.profileTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    .userInfo {
+      flex: 1;
+    }
+
+    .nameChangeButton {
+      color: #4361ee;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 14px;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .saveButton {
+      align-self: flex-end;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+
+  }
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    gap: 15px;
+
+    h3 {
+      margin: 0;
+      color: #252525;
+    }
+
+    input {
+      font-size: 24px;
+      color: #252525;
+      border: none;
+      border-bottom: 1px solid #e0e0e0;
+      width: 100%;
+      outline: none;
+    }
+
+    .closeButton {
+      position: absolute;
+      top: -70px;
+      right: -32px;
+      width: 30px;
+      height: 30px;
+      display: block;
+      padding: 0;
+      border: none;
+      background-color: #d32f2f;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: #be2626;
+      }
+    }
+  }
+
+.post > * {
+  text-decoration: none;
+  color: #000;
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 15px;
+      opacity: 0.5;
+  
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
